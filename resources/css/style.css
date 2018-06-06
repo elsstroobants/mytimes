@@ -1,1 +1,50 @@
+*{
+  margin:0;
+  padding:0;
+  overflow: hidden;
+}
 
+header {
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  height: 80px;
+  width: 100%;
+  border-bottom: solid 1px black;
+  background-color: white;
+  align-items: center;
+  z-index: 1;
+  position: fixed;
+}
+
+.logoblock {
+  padding-left: 30px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.logoblock span {
+  color: MediumAquamarine;
+}
+
+.logoblock img {
+  margin-right: 12px;
+  nin-width: 70px;
+}
+
+nav span {
+  padding: 20px 10px;
+  text-decoration: underline;
+  color: black;
+  display: inline-block;
+}
+
+header nav {
+  padding-right: 40px;
+}
+
+a {
+  color: black;
+}
