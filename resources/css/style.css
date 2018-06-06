@@ -1,7 +1,6 @@
 *{
   margin:0;
   padding:0;
-  overflow: hidden;
 }
 
 header {
@@ -47,4 +46,39 @@ header nav {
 
 a {
   color: black;
+}
+
+.content {
+  display: flex;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  width: 1232px;
+  margin: 0 auto 78px auto;
+  padding-top: 116px;
+}
+
+.column {
+  margin-right: 32px;
+}
+.column.large {
+  width: 630px;
+}
+
+.column.medium{
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
+}
+
+
+
+
+div {
+  border: solid 1px black;
+}
+.lead story{
+
 }
