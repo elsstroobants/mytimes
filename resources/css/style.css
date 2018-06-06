@@ -31,7 +31,7 @@ header {
 
 .logoblock img {
   margin-right: 12px;
-  nin-width: 70px;
+  min-width: 70px;
 }
 
 nav span {
