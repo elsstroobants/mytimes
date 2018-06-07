@@ -82,36 +82,49 @@ div {
 
 .image-content {
   display: flex;
+
 }
 .narrative {
   display: flex;
 }
 
 .lead-story {
-  display: flex;
+  display: block;
 }
-
+.stories {
+  display: block;
+}
 .lead-story .image-content {
   background-image: url("../images/main story.png");
+  height: 300px;
 }
 
 .fall-cancelled.image-content {
   background-image: url("../images/fall season.png");
+  height: 300px;
+  margin-top: 15px;
+}
+.pop-culture.image-content {
+  background-image: url("../images/hipster cameraman.png");
+  height: 300px;
+  margin-top: 15px;
 }
 
 .cat-ceo.image-content{
   background-image: url("../images/cat CEO.png");
+  height: 300px;
+  margin-top: 15px;
 }
 
 .image-content span{
   color: white;
   font-family: Georgia;
   font-weight: bold;
-  font-size: 30px;
   width: 630px;
 }
 
-.story {
+.story,
+.news-bites {
   font-family: Georgia;
   font-size: 17px;
   color: black;
@@ -121,4 +134,11 @@ div {
   font-family: Georgia;
   font-size: 17px;
   color: black;
+}
+.lead-story .image-content {
+  font-size: 40px;
+}
+
+.story .image-content {
+font-size: 30px;
 }
