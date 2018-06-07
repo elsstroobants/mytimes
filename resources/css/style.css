@@ -50,9 +50,7 @@ a {
 
 .content {
   display: flex;
-  font-family: Verdana;
   font-size: 14px;
-  font-weight: bold;
   width: 1232px;
   margin: 0 auto 78px auto;
   padding-top: 116px;
