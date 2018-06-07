@@ -77,8 +77,7 @@ a {
 div {
   border: solid 1px black;
 }
-.lead story{
-   display: flex;
+
 }
 
 .image-content {
@@ -89,5 +88,37 @@ div {
 }
 
 .lead-story {
-display: flex;
+  display: flex;
+}
+
+.lead-story .image-content {
+  background-image: url("../images/main story.png");
+}
+
+.fall-cancelled.image-content {
+  background-image: url("../images/fall season.png");
+}
+
+.cat-ceo.image-content{
+  background-image: url("../images/cat CEO.png");
+}
+
+.image-content span{
+  color: white;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  width: 630px;
+}
+
+.story {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+.lead-story .narrative {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
 }
