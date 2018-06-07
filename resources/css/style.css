@@ -80,5 +80,16 @@ div {
   border: solid 1px black;
 }
 .lead story{
+   display: flex;
+}
 
+.image-content {
+  display: flex;
+}
+.narrative {
+  display: flex;
+}
+
+.lead-story {
+display: flex;
 }
