@@ -61,6 +61,8 @@ a {
 }
 .column.large {
   width: 630px;
+  display: flex;
+  flex-direction: column;
 }
 
 .column.medium{
@@ -141,4 +143,16 @@ div {
 
 .story .image-content {
 font-size: 30px;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.stories {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
 }
