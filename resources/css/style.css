@@ -82,12 +82,19 @@ a {
   border: solid 1px black;
 } */
 
-}
+/* }   <-- Doug - Commented out this 'extra' closing bracket. It was breaking your CSS.
+                  Removing this bracket solved the issue with space between the two articles */
 
 .image-content {
   display: flex;
-
+  /* Doug - Added the following 2 lines to center text vertically within images */
+  flex-direction: column;
+  justify-content: center;
+  /* Doug - Added the following 2 lines to default width of images to 300 and to center text on images */
+  width: 300px;
+  text-align: center;
 }
+
 .narrative {
   display: flex;
 }
@@ -101,6 +108,14 @@ a {
 .lead-story .image-content {
   background-image: url("../images/main story.png");
   height: 300px;
+  width: 630px;  /* Doug - Added this line: this is only image that needs to be 630px wide */
+  font-size: 40px;
+  text-align: left;  /*Doug - Added this line: This is only image with text left aligned   */
+}
+
+/* Doug - Added the following style to indent text on title image - otherwise it was right up at the left of the image */
+.lead-story .image-content span {
+  margin-left: 20px;
 }
 
 .fall-cancelled.image-content {
@@ -124,7 +139,7 @@ a {
   color: white;
   font-family: Georgia;
   font-weight: bold;
-  width: 630px;
+/*  width: 630px;   Doug - removed this from here as it affected the width of texts on all images */
 }
 
 .story,
@@ -139,9 +154,6 @@ a {
   font-size: 17px;
   color: black;
 }
-.lead-story .image-content {
-  font-size: 40px;
-}
 
 .story .image-content {
 font-size: 30px;
@@ -151,6 +163,17 @@ font-size: 30px;
   display: flex;
   flex-direction: column;
   width: 300px;
+}
+
+/* Doug - Added the following style to create a bit of space between before starting each narrative text. */
+.narrative {
+  padding-top: 15px;
+}
+
+/* Doug - Added the following style to force 'text-content' of 'stories' to have the same height - this results in the story images being horizontally aligned.
+          note that I didn't apply this to '.story .text-content' as that would adversly affect the story in the second column. */
+.stories .text-content {
+  height: 220px;
 }
 
 .stories {
